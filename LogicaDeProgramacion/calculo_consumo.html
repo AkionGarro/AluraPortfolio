@@ -1,0 +1,22 @@
+<meta charset="UTF-8" />
+
+<h3>¿Alcohol o gasolina?</h3>
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+  }
+
+  function imprimir(texto) {
+    document.write(texto);
+  }
+
+  var tanque = 40;
+  var alcanceGasolina = 480;
+  var alcanceAlcohol = 300;
+  var consumoGasolina = alcanceGasolina / tanque;
+  var consumoAlcohol = alcanceAlcohol / tanque;
+  imprimir("Consumo de gasolina: " + consumoGasolina + " km/litros");
+  saltarLinea();
+  imprimir("Consumo de alcohol " + consumoAlcohol + "  km/litros");
+</script>
