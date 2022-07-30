@@ -1,0 +1,25 @@
+<meta charset="UTF-8" />
+
+<h1>Calculando IMC</h1>
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(texto) {
+    document.write(texto);
+    saltarLinea();
+  }
+
+  function calcularImMC(peso, altura) {
+    imc = peso / (altura * altura);
+    return imc;
+  }
+
+  altura = prompt("Ingrese su altura");
+  peso = prompt("Ingrese su peso");
+  imc = calcularImMC(peso, altura);
+  imprimir("El indice de masa corporal de " + "Akion" + " es: " + imc);
+</script>
