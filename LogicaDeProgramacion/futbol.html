@@ -1,0 +1,29 @@
+<meta charset="UTF-8" />
+
+<h1>Calcular puntos de Equipo</h1>
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(texto) {
+    document.write(texto);
+    saltarLinea();
+  }
+
+  var ganados = prompt("Ingrese el numero de partidos ganados");
+  var empatados = prompt("Ingrese el numero de partidos empatados");
+  var puntos = parseInt(ganados) * 3 + parseInt(empatados);
+
+  imprimir("El numero de puntos que ha obtenido es: " + puntos);
+
+  if (puntos > 10) {
+    imprimir("El equipo está mejor que el anho pasado");
+  } else if (puntos < 10) {
+    imprimir("El equipo está peor que el anho pasado");
+  } else {
+    imprimir("El equipo está igual que el anho pasado");
+  }
+</script>

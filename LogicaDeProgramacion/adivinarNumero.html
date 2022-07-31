@@ -1,0 +1,25 @@
+<meta charset="UTF-8" />
+
+<h1>Adivinar Numero</h1>
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(texto) {
+    document.write(texto);
+    saltarLinea();
+  }
+
+  var intentos = 0;
+  var numeroUsuario = 0;
+  while (numeroUsuario != numeroSistema) {
+    var numeroSistema = Math.round(Math.random() * 10);
+    var numeroUsuario = prompt("Ingrese un numero del 1 al 10");
+    imprimir("Numero sistema: " + numeroSistema);
+    intentos++;
+  }
+  imprimir("Felicidades, adivinaste el numero en " + intentos + " intentos");
+</script>

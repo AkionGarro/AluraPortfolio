@@ -1,0 +1,24 @@
+<meta charset="UTF-8" />
+
+<html>
+  <h1>Fechas de los mundiales</h1>
+</html>
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+  }
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  var inicioMundial = 1930;
+  var finMundial = parseInt(prompt("Ingrese el año del mundial: "));
+  imprimir("<h2>Mundiales</h2>");
+  while (inicioMundial <= finMundial) {
+    imprimir("Hubo mundial en el año " + inicioMundial);
+    inicioMundial += 4;
+  }
+</script>

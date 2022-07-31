@@ -1,0 +1,25 @@
+<meta charset="UTF-8" />
+
+<html>
+  <h1>Media Edades Familia</h1>
+</html>
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+  }
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  var miembros = parseInt(prompt("¿Cuántos miembros tiene la familia?"));
+  var edad = 0;
+  var suma = 0;
+  for (var i = 0; i < miembros; i++) {
+    edad = parseInt(prompt("¿Qué edad tiene el miembro " + (i + 1) + "?"));
+    suma += edad;
+  }
+  imprimir("La media de edad de la familia es " + suma / miembros);
+</script>
