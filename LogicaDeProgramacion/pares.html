@@ -1,0 +1,25 @@
+<meta charset="UTF-8" />
+
+<html>
+  <h1>Pares del 1 al 100</h1>
+</html>
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+  }
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+  var numero = 1;
+  while (numero <= 100) {
+    if (numero % 2 == 0) {
+      imprimir(numero);
+    }
+    numero++;
+  }
+
+  imprimir("fin");
+</script>
