@@ -1,0 +1,27 @@
+<canvas width="600" height="600"> </canvas>
+
+<script>
+  var board = document.querySelector("canvas");
+  var ctx = board.getContext("2d");
+
+  ctx.fillStyle = "lightblue";
+  ctx.fillRect(0, 0, 200, 600);
+
+  ctx.fillStyle = "red";
+  ctx.fillRect(200, 0, 400, 600);
+
+  ctx.fillStyle = "black";
+  ctx.fillRect(400, 0, 600, 600);
+
+  ctx.fillStyle = "yellow";
+  ctx.beginPath();
+  ctx.moveTo(300, 300);
+  ctx.lineTo(200, 600);
+  ctx.lineTo(400, 600);
+  ctx.fill();
+
+  ctx.fillStyle = "black";
+  ctx.beginPath();
+  ctx.arc(300, 300, 50, 0, 2 * Math.PI);
+  ctx.fill();
+</script>

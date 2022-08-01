@@ -1,0 +1,23 @@
+<canvas width="600" height="600"> </canvas>
+
+<script>
+  var board = document.querySelector("canvas");
+  var pincel = board.getContext("2d");
+  pincel.fillStyle = "black";
+  pincel.fillRect(0, 0, 600, 600);
+
+  function dibujarCuadrado(x, y, color) {
+    pincel.fillStyle = color;
+    pincel.fillRect(x, y, 50, 50);
+    pincel.strokeStyle = "black";
+    pincel.strokeRect(x, y, 50, 50);
+  }
+
+  var x = 0;
+  while (x < 600) {
+    dibujarCuadrado(x, 0, "red");
+    dibujarCuadrado(x, 50, "yellow");
+    dibujarCuadrado(x, 100, "green");
+    x += 50;
+  }
+</script>
