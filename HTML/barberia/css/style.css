@@ -1,0 +1,80 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+.nav-box {
+  background-color: white;
+  max-width: auto;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rem;
+}
+.nav-text {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-text:hover {
+  color: #e70303;
+}
+.h-section {
+  margin: 2rem auto;
+  text-align: center;
+  width: 70rem;
+}
+.about {
+  margin: 3rem 0;
+  display: flex;
+  height: auto;
+  gap: 10rem;
+  align-items: center;
+}
+
+.mision {
+  margin: 3rem 0;
+  display: flex;
+  height: auto;
+  width: 45rem;
+  gap: 10rem;
+  align-items: center;
+}
+
+.services {
+  margin: 3rem 0;
+  display: flex;
+  width: 45rem;
+  height: auto;
+  gap: 10rem;
+  align-items: center;
+}
+
+.footer-color {
+  background-color: #afaeae;
+  color: black;
+  text-align: center;
+  padding: 1px;
+}
