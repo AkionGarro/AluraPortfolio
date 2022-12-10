@@ -45,6 +45,29 @@
 
 .videoSobre .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videoSobre-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.videoSobre-video {
+  flex-grow: 0.5;
+}
+.videoSobre-sobre-list {
+  flex-grow: 0.5;
+}
+.videoSobre-button {
+  width: 100%;
+  margin: 0 auto;
+}
+.rodapePrincipal-contatoForm-submit {
+  height: 2.6rem;
+  margin: 0rem -1rem;
 }
 
 @media (max-width: 480px) {
@@ -70,5 +93,35 @@
   .videoSobre .container {
     flex-direction: column;
     text-align: center;
+  }
+  .videoSobre-sobre {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .videoSobre-button {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+  .rodapePrincipal-patrocinadores .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .rodapePrincipal-contatoForm {
+    width: 100%;
   }
 }
